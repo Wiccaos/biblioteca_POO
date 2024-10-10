@@ -8,9 +8,9 @@ class Prestamo(Libro, Usuario, Bibliotecario):
     def __init__(self, fecha_prestamo, fecha_devolucion, isbn_libro, fecha_dev_real, multa, id_usuario, id_bibliotecario):
         self.fecha_prestamo = fecha_prestamo
         self.fecha_devolucion = fecha_devolucion
-        Libro.__init__(isbn_libro)
-        Usuario.__init__(id_usuario)
-        Bibliotecario.__init__(id_bibliotecario)
+        Libro.__init__(self, isbn_libro)
+        Usuario.__init__(self, id_usuario)
+        Bibliotecario.__init__(self, id_bibliotecario)
     
     #Metodos
     def calc_fecha_dev():
