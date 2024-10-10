@@ -19,6 +19,4 @@ class Prestamo(Libro, Usuario, Bibliotecario):
 
     def calcular_multa():
         #Calcula la multa que debe pagar el usuario si es que no devolvió el libro a tiempo
-        #Si la fecha de devolucion real es mayor a la fecha de devolucion ideal, entonces
-        #se calcula la multa que debe pagar el usuario
         pass
