@@ -1,8 +1,12 @@
+from Libro import Libro
+
 class Editorial():
-    def __init__(self, run_editorial, r_s_edit, telefono_edit, correo_edit, direccion_edit):
-        self.run_editorial = run_editorial
-        self.r_s_edit = r_s_edit
-        self.telefono_edit = telefono_edit
-        self.correo_edit = correo_edit
-        self.direccion_edit = direccion_edit
+    def __init__(self, rut_editorial, telefono, correo, direccion, isbn_libro):
+        super.__init__(isbn_libro)
+        self.rut_editorial = rut_editorial
+        self.telefono = telefono
+        self.correo = correo
+        self.direccion = direccion
+
+
 

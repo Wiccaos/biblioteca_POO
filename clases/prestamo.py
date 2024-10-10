@@ -1,16 +1,24 @@
 #Importamos las clases que son necesarias para la herencia
-import Libro, usuario
+from Libro import Libro
+from Usuario import Usuario
+from Bibliotecario import Bibliotecario
+from datetime import datetime
 
-class Prestamo(Libro, usuario):
-    def __init__(self, isbn_libro, n_usuario, fecha_prestamo, fecha_devolucion, fecha_dev_real):
-        #Los atributos isbn y n_usuario son heredados de una clase padre
-        super().__init__.Libro(isbn_libro)
-        super().__init__.usuario(n_usuario)
+class Prestamo(Libro, Usuario, Bibliotecario):
+    def __init__(self, fecha_prestamo, fecha_devolucion, isbn_libro, fecha_dev_real, multa, id_usuario, id_bibliotecario):
         self.fecha_prestamo = fecha_prestamo
         self.fecha_devolucion = fecha_devolucion
-        self.fecha_dev_real = fecha_dev_real
+        Libro.__init__(isbn_libro)
+        Usuario.__init__(id_usuario)
+        Bibliotecario.__init__(id_bibliotecario)
     
-    def calc_facha_dev(self, fecha_dev_estimada):
-        """Método para calcular la fecha de devolución"""
-        fecha_dev_estimada = Prestamo.fecha_prestamo + 20
-        return fecha_dev_estimada
+    #Metodos
+    def calc_fecha_dev():
+        #Calcula la fecha de devolucion ideal
+        pass
+
+    def calcular_multa():
+        #Calcula la multa que debe pagar el usuario si es que no devolvió el libro a tiempo
+        #Si la fecha de devolucion real es mayor a la fecha de devolucion ideal, entonces
+        #se calcula la multa que debe pagar el usuario
+        pass

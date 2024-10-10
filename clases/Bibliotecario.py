@@ -1,11 +1,9 @@
-import Persona
+from Persona import Persona
 
 class Bibliotecario(Persona):
-    def __init__(self, rut_bibliotecario, id_bibliotecario, nombre_bibl, apellido_bibl):
-        super().__init__.Persona(rut) = rut_bibliotecario
+    def __init__(self, rut, nombre, apellido, direccion, telefono, correo, fecha_nacimiento, id_bibliotecario):
+        super().__init__(rut, nombre, apellido, direccion, telefono, correo, fecha_nacimiento)
         self.id_bibliotecario = id_bibliotecario
-        super().__init__.Persona(nombre) = nombre_bibl
-        super().__init__.Persona(apellido) = apellido_bibl
 
     #Metodos
     def agregar_libro():

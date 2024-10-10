@@ -1,10 +1,12 @@
-#Importamos la clase necesarias para la herencia
-import editorial
+from editorial import Editorial
+from detalle_libro import DetalleLibro
+from autor import Autor
 
-class Libro(editorial):
-    def __init__(self, titulo_libro, id_autor, isbn_libro, run_editorial):
-        #el atributo run_editorial es herencia de la clase libro y editorial
-        super().__init__.editorial(run_editorial) = run_editorial
+class Libro(Editorial, DetalleLibro, Autor):
+    def __init__(self, isbn_libro, titulo, seudonimo_autor, disponibilidad, id_autor, rut_editorial, id_detalle):
+        Editorial.__init__(self, rut_editorial)
+        DetalleLibro.__init__(self, id_detalle)
+        Autor.__init__(self, seudonimo_autor, id_autor)
         self.isbn_libro = isbn_libro
-        self.titulo_libro = titulo_libro
-        self.id_autor = id_autor
+        self.titulo = titulo
+        self.disponibilidad = disponibilidad

@@ -1,8 +1,8 @@
+from Libro import Libro
+
 class Autor():
-    """Clase del Autor de los libros"""
-    def __init__(self, id_autor, nombre_autor, fecha_nacimiento, fecha_fallecimiento, nacionalidad):
+    def __init__(self, id_autor, seudonimo, nacionalidad, isbn_libro):
+        super.__init__.Libro(isbn_libro)
         self.id_autor = id_autor
-        self.nombre_autor = nombre_autor
-        self.fecha_nacimiento = fecha_nacimiento
-        self.fecha_fallecimiento = fecha_fallecimiento
+        self.seudonimo = seudonimo
         self.nacionalidad = nacionalidad
