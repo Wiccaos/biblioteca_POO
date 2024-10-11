@@ -14,6 +14,10 @@ class Persona:
     def calcular_edad(self):
             """Metodo para calcular la edad de la persona"""
             hoy = date.today()
-            edad = hoy.year - self.fecha_nacimiento.year - ((hoy.month, hoy.day) < (self.fecha_nacimiento.month, self.fecha_nacimiento.day))
+            if self.fecha_nacimiento.month > hoy.month:
+                edad = hoy.year - self.fecha_nacimiento.year - 1
+            elif self.fecha_nacimiento.month == hoy.month and self.fecha_nacimiento.day > hoy.day:
+                edad = hoy.year - self.fecha_nacimiento.year - 1
+            else:
+                edad = hoy.year - self.fecha_nacimiento.year
             return edad
-    

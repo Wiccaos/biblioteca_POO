@@ -2,6 +2,7 @@
 from Libro import Libro
 
 class Editorial(Libro):
+    """Clase que representa una Editorial"""
     def __init__(self, rut_editorial, telefono, correo, direccion, isbn_libro):
         """Constructor de la clase Editorial, Llama al constructor de la clase Libro
          y fija los valores de los atributos propios de la clase."""

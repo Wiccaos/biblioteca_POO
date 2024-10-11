@@ -9,23 +9,23 @@ class Bibliotecario(Persona):
         self.id_bibliotecario = id_bibliotecario
         
     #Metodos
-    def agregar_libro():
-        # código para agregar un libro a la base de datos
+    def agregar_libro(self):
+        """Agrega un Libro a la base de datos."""
         pass
 
-    def eliminar_libro():
-        # código para eliminar un libro de la base de datos
+    def eliminar_libro(self):
+        """Elimina un Libro de la base de datos."""
         pass
 
-    def registrar_prestamo():
-        # código para registrar un préstamo de un libro
+    def registrar_prestamo(self):
+        """Registra un prestamo de un libro."""
         pass
 
-    def registrar_devolucion():
-        # código para registrar la devolución de un libro
+    def registrar_devolucion(self):
+        """Registra la devolución de un libro."""
         pass
 
-    def registrar_usuario():
-        # código para registrar un usuario
+    def registrar_usuario(self):
+        """Registra un usuario."""
         pass
     
