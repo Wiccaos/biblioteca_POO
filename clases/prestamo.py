@@ -6,6 +6,7 @@ from datetime import datetime
 
 class Prestamo(Libro, Usuario, Bibliotecario):
     def __init__(self, fecha_prestamo, fecha_devolucion, isbn_libro, fecha_dev_real, multa, id_usuario, id_bibliotecario):
+        """Constructor de la clase Prestamo."""
         self.fecha_prestamo = fecha_prestamo
         self.fecha_devolucion = fecha_devolucion
         Libro.__init__(self, isbn_libro)
