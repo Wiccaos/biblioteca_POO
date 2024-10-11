@@ -5,7 +5,6 @@ from autor import Autor
 
 class Libro(Editorial, DetalleLibro, Autor):
     """Clase que representa un Libro"""
-
     def __init__(self, isbn_libro, titulo, seudonimo_autor, disponibilidad, id_autor, rut_editorial, id_detalle):
         """Constructor de la clase Libro. Llama al constructor de las clases
         superiores y fija los valores de los atributos propios de la

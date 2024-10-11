@@ -3,7 +3,6 @@ from Libro import Libro
 
 class Autor():
     """ Clase que representa a un autor de un libro """
-
     def __init__(self, id_autor, seudonimo, nacionalidad, isbn_libro):
         """ Constructor de la clase Autor"""
         super().__init__(isbn_libro)
